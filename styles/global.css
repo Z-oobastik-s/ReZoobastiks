@@ -53,50 +53,67 @@ body {
 
 .hotspot {
   position: absolute;
-  border: 1px dashed rgba(203, 153, 255, 0.5);
-  background: rgba(138, 74, 236, 0.1);
-  border-radius: 8px;
+  border: 0;
+  background: transparent;
   cursor: pointer;
   pointer-events: auto;
-  transition: all 0.2s ease;
+  transition: background 0.15s ease;
 }
 
-.hotspot:hover,
-.hotspot.is-active {
-  border-color: rgba(223, 195, 255, 0.95);
-  background: rgba(167, 102, 255, 0.24);
-  box-shadow: 0 0 0.8rem rgba(149, 73, 255, 0.65);
+.hotspot:hover {
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.hotspot span {
-  position: absolute;
-  top: 6px;
-  left: 8px;
-  font-size: 11px;
-  color: #f0e3ff;
-  text-shadow: 0 0 8px #000;
-}
-
-.interaction-panel {
-  margin-top: 0.8rem;
-  width: min(864px, 96vw);
-  background: rgba(8, 7, 18, 0.88);
+.interaction-modal {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: min(360px, 92vw);
+  background: rgba(7, 7, 17, 0.95);
   border: 1px solid var(--stroke);
-  border-radius: 14px;
-  padding: 0.8rem;
+  border-radius: 12px;
+  padding: 0.75rem;
+  transform: translateY(16px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 30;
 }
 
-.interaction-panel h2 {
-  margin: 0 0 0.35rem;
-  font-size: 1.1rem;
+.interaction-modal.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
-.interaction-panel__desc {
+.interaction-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.interaction-modal__header h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.interaction-modal__close {
+  border: 1px solid var(--stroke);
+  background: rgba(18, 14, 35, 0.9);
+  color: #eee6ff;
+  border-radius: 6px;
+  width: 28px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.interaction-modal__desc {
   margin: 0 0 0.6rem;
   color: var(--muted);
 }
 
-.interaction-panel__gallery {
+.interaction-modal__gallery {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.5rem;
@@ -117,7 +134,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .interaction-panel__gallery {
+  .interaction-modal__gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
