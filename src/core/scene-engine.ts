@@ -64,16 +64,9 @@ export class SceneEngine {
   }
 
   private observeSections(): void {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add("is-visible");
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    this.sections.forEach((section) => observer.observe(section));
+    this.sections.forEach((section, index) => {
+      if (index <= 1) section.classList.add("is-visible");
+    });
   }
 
   scrollTo(index: number): void {
@@ -95,6 +88,8 @@ export class SceneEngine {
     if (next !== this.current) {
       this.current = next;
       this.updateNav();
+      this.updateSectionVisibility();
+      window.dispatchEvent(new CustomEvent("scene:change", { detail: { index: this.current } }));
     }
     this.raf = window.requestAnimationFrame(this.animate);
     this.ticking = true;
@@ -103,6 +98,12 @@ export class SceneEngine {
   private updateNav(): void {
     this.navButtons.forEach((button, index) => {
       button.classList.toggle("is-active", index === this.current);
+    });
+  }
+
+  private updateSectionVisibility(): void {
+    this.sections.forEach((section, index) => {
+      section.classList.toggle("is-visible", Math.abs(index - this.current) <= 1);
     });
   }
 

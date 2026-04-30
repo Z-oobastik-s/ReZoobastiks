@@ -16,6 +16,14 @@ export const visualAssets: VisualAsset[] = manifest.map((entry, index) => ({
   alt: entry.original
 }));
 
+const folderIndexMap = new Map<string, number[]>();
+manifest.forEach((entry, index) => {
+  const folder = entry.original.includes("/") ? entry.original.split("/")[0] : "root";
+  const list = folderIndexMap.get(folder) ?? [];
+  list.push(index);
+  folderIndexMap.set(folder, list);
+});
+
 const sectionIds: SectionDefinition["id"][] = [
   "hero",
   "about",
@@ -51,20 +59,21 @@ const descriptions = [
   "Telegram, Discord и актуальные новости сервера."
 ];
 
-const assetsPerSection = Math.ceil(visualAssets.length / sectionIds.length);
+const sectionAssets: Record<SectionDefinition["id"], number[]> = {
+  hero: [...(folderIndexMap.get("Logo and Navbar") ?? []), ...(folderIndexMap.get("Buttons") ?? [])],
+  about: [...(folderIndexMap.get("Service Blocks Screenshots Gallery") ?? [])],
+  features: [...(folderIndexMap.get("Feature Blocks") ?? []), ...(folderIndexMap.get("Decorative frames") ?? [])],
+  mechanics: [...(folderIndexMap.get("Mechanic Blocks") ?? []), ...(folderIndexMap.get("Icons Elements") ?? [])],
+  modes: [...(folderIndexMap.get("Icons Elements") ?? []), ...(folderIndexMap.get("Status panel") ?? [])],
+  tech: [...(folderIndexMap.get("Progress Bars") ?? []), ...(folderIndexMap.get("Connecting to the server") ?? [])],
+  connect: [...(folderIndexMap.get("Connecting to the server") ?? []), ...(folderIndexMap.get("Buttons") ?? [])],
+  social: [...(folderIndexMap.get("Service Blocks Screenshots Gallery") ?? []), ...(folderIndexMap.get("root") ?? [])]
+};
 
-export const sections: SectionDefinition[] = sectionIds.map((id, index) => {
-  const start = index * assetsPerSection;
-  const end = Math.min(start + assetsPerSection, visualAssets.length);
-  const assetIndexes = Array.from({ length: Math.max(end - start, 1) }, (_, i) => start + i).filter(
-    (assetIndex) => assetIndex < visualAssets.length
-  );
-
-  return {
-    id,
-    label: labels[index],
-    title: titles[index],
-    description: descriptions[index],
-    assetIndexes
-  };
-});
+export const sections: SectionDefinition[] = sectionIds.map((id, index) => ({
+  id,
+  label: labels[index],
+  title: titles[index],
+  description: descriptions[index],
+  assetIndexes: sectionAssets[id].length ? sectionAssets[id] : [index]
+}));
