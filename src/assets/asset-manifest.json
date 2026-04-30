@@ -1,0 +1,397 @@
+[
+  {
+    "id": "asset-001",
+    "file": "raw/asset-001.png",
+    "original": "Buttons/иконка_корзина.png"
+  },
+  {
+    "id": "asset-002",
+    "file": "raw/asset-002.png",
+    "original": "Buttons/иконка_телеграм.png"
+  },
+  {
+    "id": "asset-003",
+    "file": "raw/asset-003.png",
+    "original": "Buttons/иконка_трикутник_начать_запустить.png"
+  },
+  {
+    "id": "asset-004",
+    "file": "raw/asset-004.png",
+    "original": "Buttons/кнопка_offline.png"
+  },
+  {
+    "id": "asset-005",
+    "file": "raw/asset-005.png",
+    "original": "Buttons/кнопка_online.png"
+  },
+  {
+    "id": "asset-006",
+    "file": "raw/asset-006.png",
+    "original": "Buttons/кнопка_донат.png"
+  },
+  {
+    "id": "asset-007",
+    "file": "raw/asset-007.png",
+    "original": "Buttons/кнопка_кейсы.png"
+  },
+  {
+    "id": "asset-008",
+    "file": "raw/asset-008.png",
+    "original": "Buttons/кнопка_копировать_айпи.png"
+  },
+  {
+    "id": "asset-009",
+    "file": "raw/asset-009.png",
+    "original": "Buttons/кнопка_магазин.png"
+  },
+  {
+    "id": "asset-010",
+    "file": "raw/asset-010.png",
+    "original": "Buttons/кнопка_наш_телеграм.png"
+  },
+  {
+    "id": "asset-011",
+    "file": "raw/asset-011.png",
+    "original": "Buttons/кнопка_подключится.png"
+  },
+  {
+    "id": "asset-012",
+    "file": "raw/asset-012.png",
+    "original": "Buttons/кнопка_правила.png"
+  },
+  {
+    "id": "asset-013",
+    "file": "raw/asset-013.png",
+    "original": "Buttons/кнопка_форум.png"
+  },
+  {
+    "id": "asset-014",
+    "file": "raw/asset-014.png",
+    "original": "Connecting to the server/блок_с_айпи_сервера_и_информацией_о_сервере.png"
+  },
+  {
+    "id": "asset-015",
+    "file": "raw/asset-015.png",
+    "original": "Decorative frames/рамка_2.png"
+  },
+  {
+    "id": "asset-016",
+    "file": "raw/asset-016.png",
+    "original": "Decorative frames/рамка.png"
+  },
+  {
+    "id": "asset-017",
+    "file": "raw/asset-017.png",
+    "original": "Feature Blocks/кнопка_огромный_уникальный_мир.png"
+  },
+  {
+    "id": "asset-018",
+    "file": "raw/asset-018.png",
+    "original": "Feature Blocks/кнопка_сложная_система_мобов.png"
+  },
+  {
+    "id": "asset-019",
+    "file": "raw/asset-019.png",
+    "original": "Feature Blocks/кнопка_уникальные_механики.png"
+  },
+  {
+    "id": "asset-020",
+    "file": "raw/asset-020.png",
+    "original": "Feature Blocks/кнопка_экономика_и_баланс.png"
+  },
+  {
+    "id": "asset-021",
+    "file": "raw/asset-021.png",
+    "original": "Feature Blocks/кнопка_эпичные_данжи_и_постройки.png"
+  },
+  {
+    "id": "asset-022",
+    "file": "raw/asset-022.png",
+    "original": "Icons Elements/иконка_алмаз.png"
+  },
+  {
+    "id": "asset-023",
+    "file": "raw/asset-023.png",
+    "original": "Icons Elements/иконка_ботинки.png"
+  },
+  {
+    "id": "asset-024",
+    "file": "raw/asset-024.png",
+    "original": "Icons Elements/иконка_брошка.png"
+  },
+  {
+    "id": "asset-025",
+    "file": "raw/asset-025.png",
+    "original": "Icons Elements/иконка_железо.png"
+  },
+  {
+    "id": "asset-026",
+    "file": "raw/asset-026.png",
+    "original": "Icons Elements/иконка_звезда_незера.png"
+  },
+  {
+    "id": "asset-027",
+    "file": "raw/asset-027.png",
+    "original": "Icons Elements/иконка_золото.png"
+  },
+  {
+    "id": "asset-028",
+    "file": "raw/asset-028.png",
+    "original": "Icons Elements/иконка_изумруд.png"
+  },
+  {
+    "id": "asset-029",
+    "file": "raw/asset-029.png",
+    "original": "Icons Elements/иконка_кирка_2.png"
+  },
+  {
+    "id": "asset-030",
+    "file": "raw/asset-030.png",
+    "original": "Icons Elements/иконка_кирка.png"
+  },
+  {
+    "id": "asset-031",
+    "file": "raw/asset-031.png",
+    "original": "Icons Elements/иконка_меч.png"
+  },
+  {
+    "id": "asset-032",
+    "file": "raw/asset-032.png",
+    "original": "Icons Elements/иконка_нагрудник.png"
+  },
+  {
+    "id": "asset-033",
+    "file": "raw/asset-033.png",
+    "original": "Icons Elements/иконка_поножи.png"
+  },
+  {
+    "id": "asset-034",
+    "file": "raw/asset-034.png",
+    "original": "Icons Elements/иконка_пузырёк_зелья.png"
+  },
+  {
+    "id": "asset-035",
+    "file": "raw/asset-035.png",
+    "original": "Icons Elements/иконка_сердце_пустое_внутри_2.png"
+  },
+  {
+    "id": "asset-036",
+    "file": "raw/asset-036.png",
+    "original": "Icons Elements/иконка_сердце_пустое_внутри.png"
+  },
+  {
+    "id": "asset-037",
+    "file": "raw/asset-037.png",
+    "original": "Icons Elements/иконка_фиолетовая_звезда_незера.png"
+  },
+  {
+    "id": "asset-038",
+    "file": "raw/asset-038.png",
+    "original": "Icons Elements/иконка_фиолетовый_изумруд_чуть_больше_размером.png"
+  },
+  {
+    "id": "asset-039",
+    "file": "raw/asset-039.png",
+    "original": "Icons Elements/иконка_фиолетовый_изумруд.png"
+  },
+  {
+    "id": "asset-040",
+    "file": "raw/asset-040.png",
+    "original": "Icons Elements/иконка_фиолетовый_пузырёк_зелья.png"
+  },
+  {
+    "id": "asset-041",
+    "file": "raw/asset-041.png",
+    "original": "Icons Elements/иконка_цердце_заполненное_внутри_цветом_оригинал.png"
+  },
+  {
+    "id": "asset-042",
+    "file": "raw/asset-042.png",
+    "original": "Icons Elements/иконка_цердце_заполненное_внутри_цветом.png"
+  },
+  {
+    "id": "asset-043",
+    "file": "raw/asset-043.png",
+    "original": "Icons Elements/иконка_шлем.png"
+  },
+  {
+    "id": "asset-044",
+    "file": "raw/asset-044.png",
+    "original": "Icons Elements/иконка_щит.png"
+  },
+  {
+    "id": "asset-045",
+    "file": "raw/asset-045.png",
+    "original": "Icons Elements/иконка_эндер_глаз.png"
+  },
+  {
+    "id": "asset-046",
+    "file": "raw/asset-046.png",
+    "original": "Icons Elements/элемент_длинная_полоса.png"
+  },
+  {
+    "id": "asset-047",
+    "file": "raw/asset-047.png",
+    "original": "Logo and Navbar/кнопка_возможности.png"
+  },
+  {
+    "id": "asset-048",
+    "file": "raw/asset-048.png",
+    "original": "Logo and Navbar/кнопка_всё_вместе_главная_о_сервере_возможности_данжи_контакты.png"
+  },
+  {
+    "id": "asset-049",
+    "file": "raw/asset-049.png",
+    "original": "Logo and Navbar/кнопка_главная.png"
+  },
+  {
+    "id": "asset-050",
+    "file": "raw/asset-050.png",
+    "original": "Logo and Navbar/кнопка_данжы.png"
+  },
+  {
+    "id": "asset-051",
+    "file": "raw/asset-051.png",
+    "original": "Logo and Navbar/кнопка_контакты.png"
+  },
+  {
+    "id": "asset-052",
+    "file": "raw/asset-052.png",
+    "original": "Logo and Navbar/кнопка_начать_играть.png"
+  },
+  {
+    "id": "asset-053",
+    "file": "raw/asset-053.png",
+    "original": "Logo and Navbar/кнопка_о_сервере.png"
+  },
+  {
+    "id": "asset-054",
+    "file": "raw/asset-054.png",
+    "original": "Logo and Navbar/навбар.png"
+  },
+  {
+    "id": "asset-055",
+    "file": "raw/asset-055.png",
+    "original": "Logo and Navbar/надпись_zoobastiks.png"
+  },
+  {
+    "id": "asset-056",
+    "file": "raw/asset-056.png",
+    "original": "Mechanic Blocks/кнопка_приват_одним_блоком_защити_свой_мир_любым_блоком.png"
+  },
+  {
+    "id": "asset-057",
+    "file": "raw/asset-057.png",
+    "original": "Mechanic Blocks/кнопка_самый_сложный_сервер_каждый_день_испытание_на_выживание.png"
+  },
+  {
+    "id": "asset-058",
+    "file": "raw/asset-058.png",
+    "original": "Mechanic Blocks/кнопка_уникальные_плагины_авторские_системы_не_имеющие_аналогов.png"
+  },
+  {
+    "id": "asset-059",
+    "file": "raw/asset-059.png",
+    "original": "Mechanic Blocks/кнопка_экономика_и_баланс_продуманная_экономика_баланс_ресурсов.png"
+  },
+  {
+    "id": "asset-060",
+    "file": "raw/asset-060.png",
+    "original": "Mechanic Blocks/флай_в_полёте.png"
+  },
+  {
+    "id": "asset-061",
+    "file": "raw/asset-061.png",
+    "original": "Progress Bars/прогресс_бар_загрузка_мира.png"
+  },
+  {
+    "id": "asset-062",
+    "file": "raw/asset-062.png",
+    "original": "Service Blocks Screenshots Gallery/блок_как_начать_играть.png"
+  },
+  {
+    "id": "asset-063",
+    "file": "raw/asset-063.png",
+    "original": "Service Blocks Screenshots Gallery/блок_низ_сайта.png"
+  },
+  {
+    "id": "asset-064",
+    "file": "raw/asset-064.png",
+    "original": "Service Blocks Screenshots Gallery/блок_подключайся_к_нам_и_ссылка_на_телеграм.png"
+  },
+  {
+    "id": "asset-065",
+    "file": "raw/asset-065.png",
+    "original": "Service Blocks Screenshots Gallery/блок_правила_сервера_и_написано_на_нём_пару_правил_и_текст_подробнее.png"
+  },
+  {
+    "id": "asset-066",
+    "file": "raw/asset-066.png",
+    "original": "Service Blocks Screenshots Gallery/блок_слоган_сервера.png"
+  },
+  {
+    "id": "asset-067",
+    "file": "raw/asset-067.png",
+    "original": "Service Blocks Screenshots Gallery/иконка_непонятное_скриншот_сервера.png"
+  },
+  {
+    "id": "asset-068",
+    "file": "raw/asset-068.png",
+    "original": "Service Blocks Screenshots Gallery/иконка_остров_парящий_в_небесах.png"
+  },
+  {
+    "id": "asset-069",
+    "file": "raw/asset-069.png",
+    "original": "Service Blocks Screenshots Gallery/иконка_пещера_с_зачарованным_столом.png"
+  },
+  {
+    "id": "asset-070",
+    "file": "raw/asset-070.png",
+    "original": "Service Blocks Screenshots Gallery/кнопка_аукцион_и_изображен_молот.png"
+  },
+  {
+    "id": "asset-071",
+    "file": "raw/asset-071.png",
+    "original": "Service Blocks Screenshots Gallery/кнопка_квесты_и_изображена_книга_открытая.png"
+  },
+  {
+    "id": "asset-072",
+    "file": "raw/asset-072.png",
+    "original": "Service Blocks Screenshots Gallery/кнопка_кейсы_и_изображен_лаки_блок.png"
+  },
+  {
+    "id": "asset-073",
+    "file": "raw/asset-073.png",
+    "original": "Service Blocks Screenshots Gallery/кнопка_магазин_и_изображен_сундук.png"
+  },
+  {
+    "id": "asset-074",
+    "file": "raw/asset-074.png",
+    "original": "Service Blocks Screenshots Gallery/кнопка_рейтинг_и_изображен_кубок.png"
+  },
+  {
+    "id": "asset-075",
+    "file": "raw/asset-075.png",
+    "original": "Service Blocks Screenshots Gallery/кнопка_топы_и_изображено_корона.png"
+  },
+  {
+    "id": "asset-076",
+    "file": "raw/asset-076.png",
+    "original": "Status panel/рекорд_и_онлайн_показывает_сколько_игроков_на_сервере_и_рекорд_онлайна.png"
+  },
+  {
+    "id": "asset-077",
+    "file": "raw/asset-077.png",
+    "original": "как_я_хочу_чтобы_выглядел_наш_сайт.png"
+  },
+  {
+    "id": "asset-078",
+    "file": "raw/asset-078.png",
+    "original": "оригинал_без_фона.png"
+  },
+  {
+    "id": "asset-079",
+    "file": "raw/asset-079.png",
+    "original": "оригинал.png"
+  }
+]
