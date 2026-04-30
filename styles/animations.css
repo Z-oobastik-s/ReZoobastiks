@@ -1,43 +1,25 @@
-.interactive {
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease,
-    filter 0.35s ease,
-    border-color 0.35s ease;
+.poster-frame {
+  animation: fadeIn 0.5s ease-out both;
 }
 
-.interactive:hover {
-  transform: translate3d(var(--px, 0), var(--py, 0), 0) scale(1.03);
-  border-color: rgba(229, 197, 255, 0.8);
-  box-shadow:
-    0 0 1.3rem rgba(162, 80, 255, 0.6),
-    inset 0 0 1.1rem rgba(134, 42, 255, 0.22);
-  filter: brightness(1.06);
+.poster-nav__button,
+.poster-cta {
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.scene-section {
-  opacity: 0;
-  transform: translate3d(0, 48px, 0);
-  transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+.poster-nav__button:hover,
+.poster-cta:hover {
+  transform: translateY(-1px) scale(1.02);
+  filter: brightness(1.08);
 }
 
-.scene-section.is-visible {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-.asset-chip,
-.asset-hero {
-  animation: floatIn 0.65s both;
-}
-
-@keyframes floatIn {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate3d(var(--px, 0), calc(var(--py, 0) + 14px), 0) scale(0.97);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
-    transform: translate3d(var(--px, 0), var(--py, 0), 0) scale(1);
+    transform: translateY(0);
   }
 }

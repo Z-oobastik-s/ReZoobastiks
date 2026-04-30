@@ -2,7 +2,6 @@ import "../styles/global.css";
 import "../styles/animations.css";
 import { bootParticles } from "./animations/particles";
 import { createSceneLayout } from "./components/scene-builder";
-import { SceneEngine } from "./core/scene-engine";
 import { sections, visualAssets } from "./core/scene-data";
 import { preloadCriticalAssets, setupAntiCopyLayer, setupLazyAssets, setupParallax } from "./utils/experience";
 
@@ -20,8 +19,3 @@ setupParallax();
 setupLazyAssets();
 preloadCriticalAssets(12);
 bootParticles();
-
-const engine = new SceneEngine(scene);
-engine.init();
-
-window.addEventListener("beforeunload", () => engine.destroy());
