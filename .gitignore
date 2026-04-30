@@ -2,3 +2,15 @@ node_modules
 dist
 .DS_Store
 github-token.txt
+deploy.bat
+/Buttons/
+/Connecting to the server/
+/Decorative frames/
+/Feature Blocks/
+/Icons Elements/
+/Logo and Navbar/
+/Mechanic Blocks/
+/Progress Bars/
+/Service Blocks Screenshots Gallery/
+/Status panel/
+/*.png
