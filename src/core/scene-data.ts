@@ -6,13 +6,11 @@ const imageModules = import.meta.glob("../assets/raw/*.png", {
   import: "default"
 }) as Record<string, string>;
 
-const sortedAssetFiles = Object.entries(imageModules)
-  .sort(([a], [b]) => a.localeCompare(b, "en"))
-  .map(([, value]) => value);
+const fallbackAsset = imageModules["../assets/raw/asset-001.png"] ?? "";
 
-export const visualAssets: VisualAsset[] = manifest.map((entry, index) => ({
+export const visualAssets: VisualAsset[] = manifest.map((entry) => ({
   id: entry.id,
-  src: sortedAssetFiles[index],
+  src: imageModules[`../assets/${entry.file}`] ?? fallbackAsset,
   alt: entry.original
 }));
 

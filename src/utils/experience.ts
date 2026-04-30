@@ -9,27 +9,10 @@ export function preloadCriticalAssets(count = 10): void {
 }
 
 export function setupLazyAssets(): void {
-  const sectionImages = Array.from(document.querySelectorAll<HTMLElement>(".scene-section")).map((section) =>
-    Array.from(section.querySelectorAll<HTMLImageElement>("img[data-src]"))
-  );
-
-  const loadSection = (sectionIndex: number): void => {
-    const images = sectionImages[sectionIndex] ?? [];
-    images.forEach((img) => {
-      if (img.src) return;
-      const src = img.dataset.src;
-      if (src) img.src = src;
-    });
-  };
-
-  loadSection(0);
-  loadSection(1);
-
-  window.addEventListener("scene:change", (event) => {
-    const index = Number((event as CustomEvent<{ index: number }>).detail?.index ?? 0);
-    loadSection(index - 1);
-    loadSection(index);
-    loadSection(index + 1);
+  const images = Array.from(document.querySelectorAll<HTMLImageElement>("img[data-src]"));
+  images.forEach((img) => {
+    const src = img.dataset.src;
+    if (src) img.src = src;
   });
 }
 

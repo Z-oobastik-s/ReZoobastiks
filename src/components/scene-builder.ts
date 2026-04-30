@@ -59,7 +59,7 @@ export function createSceneLayout(sections: SectionDefinition[], assets: VisualA
       button.dataset.depth = "0.18";
       button.innerHTML = `
         <img class="asset-chip__img" alt="${asset.alt}" draggable="false" />
-        <span>${asset.id}</span>
+        <span>${asset.alt.split("/").pop() ?? asset.id}</span>
       `;
 
       const img = button.querySelector<HTMLImageElement>(".asset-chip__img");

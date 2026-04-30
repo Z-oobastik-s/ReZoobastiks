@@ -172,6 +172,9 @@ body {
   font-size: 0.68rem;
   padding: 0.3rem 0.2rem 0.2rem;
   color: #cab7f8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (min-width: 768px) {
