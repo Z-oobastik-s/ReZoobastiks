@@ -110,6 +110,14 @@ if not exist ".gitattributes" (
 call :log_ok "origin configured, .gitattributes ready"
 
 call :next_step "Stage files and security check"
+if not exist ".git\" (
+  call :log_warning ".git folder is missing before staging. Re-initializing repository."
+  git init -b %BRANCH%
+  if errorlevel 1 (
+    call :log_error "Failed to initialize git repository before staging."
+    goto END_FAIL
+  )
+)
 call git rm -r --cached . >nul 2>&1
 call git add -A
 if errorlevel 1 (
