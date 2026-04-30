@@ -8,6 +8,7 @@ set "GITHUB_REPO=ReZoobastiks"
 set "BRANCH=main"
 set "REPO_URL=https://github.com/%GITHUB_OWNER%/%GITHUB_REPO%.git"
 set "TOKEN_FILE=github-token.txt"
+set "GIT_TERMINAL_PROMPT=0"
 
 set "STEP=0"
 
@@ -59,12 +60,16 @@ if not exist "%TOKEN_FILE%" (
   goto END_FAIL
 )
 set "GITHUB_TOKEN="
-set /p GITHUB_TOKEN=<"%TOKEN_FILE%"
+for /f "usebackq tokens=* delims=" %%A in ("%TOKEN_FILE%") do (
+  set "GITHUB_TOKEN=%%A"
+  goto TOKEN_READ_DONE
+)
+:TOKEN_READ_DONE
 if not defined GITHUB_TOKEN (
   call :log_error "Token file %TOKEN_FILE% is empty. Put token on first line."
   goto END_FAIL
 )
-set "AUTH_REPO_URL=https://%GITHUB_TOKEN%@github.com/%GITHUB_OWNER%/%GITHUB_REPO%.git"
+set "AUTH_REPO_URL=https://x-access-token:%GITHUB_TOKEN%@github.com/%GITHUB_OWNER%/%GITHUB_REPO%.git"
 call :log_ok "Token loaded"
 
 call :next_step "Initialize and configure Git"
@@ -158,7 +163,7 @@ if /I not "!CURRENT_BRANCH!"=="%BRANCH%" (
   )
 )
 
-call git push -u origin %BRANCH% --force
+git -c credential.helper= -c core.askPass= -c credential.interactive=never push -u origin %BRANCH% --force
 if errorlevel 1 (
   call :log_error "Push to GitHub failed."
   goto END_FAIL
@@ -198,12 +203,12 @@ exit /b 0
 :END_FAIL
 echo.
 echo [ERROR] Script finished with errors.
-pause
+if not defined NO_PAUSE pause
 exit /b 1
 
 :END_OK
 echo.
 echo [OK] Deploy completed successfully.
 echo [OK] Repository: https://github.com/%GITHUB_OWNER%/%GITHUB_REPO%
-pause
+if not defined NO_PAUSE pause
 exit /b 0
